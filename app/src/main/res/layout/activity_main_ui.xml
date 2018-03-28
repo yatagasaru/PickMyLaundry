@@ -7,7 +7,8 @@
     android:orientation="vertical"
     android:id="@+id/layout_main_ui"
     android:background="@drawable/backgroundbot2"
-    tools:context="com.example.lenovo.androidmysql.MainUIActivity">
+    tools:context="com.example.lenovo.androidmysql.MainUIActivity">\
+
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
@@ -142,6 +143,7 @@
             android:layout_weight="1"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
             android:clickable="true"
             app:cardBackgroundColor="@color/putih"
             android:foreground="?android:attr/selectableItemBackground">
@@ -224,7 +226,7 @@
         </TableRow>
     </LinearLayout>
     <android.support.v7.widget.CardView
-        android:layout_width="270dp"
+        android:layout_width="250dp"
         android:foreground="?android:attr/selectableItemBackground"
         android:layout_height="150dp"
         android:layout_gravity="center"
