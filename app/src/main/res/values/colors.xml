@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="putih">#ffffff</color>
+    <color name="hitam">#000</color>
+    <color name="hijautosca">#59a687</color>
+    <color name="biruhijautua">#00737e</color>
+    <color name="merah">#ea0004</color>
+    <color name="hijau">#07de00</color>
+    <color name="abuabu">#dcdcdc</color>
+    <color name="abuabugelap">#b7b7b7</color>
+    <color name="hijaucerah">#00eeff</color>
+    <color name="hijaugelapsikit">#00c1cf</color>
+    <color name="kuning">#ede600</color>
+    <color name="birugelap">#0077ff</color>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="25dp"
+    android:id="@+id/mainlayout"
+    android:background="@drawable/bluebg"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.androidmysql.MainActivity">
+
+    <ImageView
+        android:id="@+id/ivlogo"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:src="@drawable/logo3"/>
+
+    <EditText
+        android:drawableLeft="@drawable/ic_user"
+        android:backgroundTint="@color/putih"
+        android:hint="Username"
+        android:foregroundTint="@color/putih"
+        android:textColor="@color/putih"
+        android:textColorHint="@color/putih"
+        android:id="@+id/et_username_login"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/ivlogo"
+        android:layout_marginTop="50dp"
+        android:drawablePadding="10dp"
+        />
+
+    <EditText
+        android:textColorHint="@color/putih"
+        android:backgroundTint="@color/putih"
+        android:hint="Password"
+        android:foregroundTint="@color/putih"
+        android:textColor="@color/putih"
+        android:layout_width="match_parent"
+        android:drawableLeft="@drawable/ic_pass"
+        android:layout_height="70dp"
+        android:id="@+id/et_password_login"
+        android:layout_below="@+id/et_username_login"
+        android:inputType="textPassword"
+        android:drawablePadding="10dp"
+        />
+    <TextView
+        android:id="@+id/tvforgotpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Forgot Password ?"
+        android:textColor="@color/putih"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/et_password_login"
+        />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/tvforgotpass"
+        android:text="L O G I N"
+        android:layout_centerHorizontal="true"
+        android:onClick="prosesLogin"
+        android:background="@drawable/buttonlogin"
+        android:textColor="@color/hijautosca"/>
+    
+    <Button
+        android:textColor="@color/putih"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/button_signup"
+        android:text="S I G N  U P"
+        android:layout_below="@id/button_login"
+        android:background="@drawable/buttonsignup"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hakcipta"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/putih"
+        android:textSize="10dp"
+        android:layout_marginBottom="15dp"/>
+</RelativeLayout>
