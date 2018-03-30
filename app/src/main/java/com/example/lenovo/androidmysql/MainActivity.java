@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
 
                 } else {
                     Toast.makeText(getApplicationContext(), "Silahkan isi form terlebih dahulu",Toast.LENGTH_LONG).show();
-                }
+              }
             }
 
 
