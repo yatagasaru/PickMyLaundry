@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     String nama, pass;
     MainUIActivity mainui = new MainUIActivity();
     BackgroundWork bgwk = new BackgroundWork(this);
+    UnlimitedWorks uw = new UnlimitedWorks(this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,10 +51,11 @@ public class MainActivity extends AppCompatActivity {
                 if(username.getText().length() != 0) {
                     nama = username.getText().toString();
                     pass = password.getText().toString();
-                    progressDialog.setMessage("Logging in");
-                    progressDialog.show();
+                    //progressDialog.setMessage("Logging in");
                     //bgwk.execute(method, nama, pass);
-                    StringRequest stringRequest = new StringRequest(Request.Method.POST, Constants.URL_LOGIN, new Response.Listener<String>() {
+                    uw.execute(nama, pass);
+
+                    /*StringRequest stringRequest = new StringRequest(Request.Method.POST, Constants.URL_LOGIN, new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
                             progressDialog.dismiss();
@@ -80,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     };
                     RequestQueue requestQueue = Volley.newRequestQueue(this);
-                    requestQueue.add(stringRequest);
+                    requestQueue.add(stringRequest);*/
 
                 } else {
                     Toast.makeText(getApplicationContext(), "Silahkan isi form terlebih dahulu",Toast.LENGTH_LONG).show();
@@ -96,4 +98,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 }
