@@ -1,6 +1,8 @@
 package com.example.lenovo.androidmysql;
 
 import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,6 +21,7 @@ public class RegisterActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register_layout);
+
         nama = (EditText)findViewById(R.id.et_name);
         judul = (TextView)findViewById(R.id.judulform);
         username_register = (EditText)findViewById(R.id.et_username_register);

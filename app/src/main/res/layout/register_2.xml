@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluebg"
+    tools:context="com.example.lenovo.androidmysql.Register2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/etWelcome"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/putih"
+            android:text="Welcome {{fullName}},"
+            android:layout_marginBottom="16dp"
+            />
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_below="@+id/etWelcome"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/putih"
+            android:textColorHint="@color/putih"
+            android:backgroundTint="@color/putih"
+            android:hint="Enter Your Phone Number"
+
+            />
+        <EditText
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_below="@+id/etPhoneNumber"
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/putih"
+            android:textColorHint="@color/putih"
+            android:backgroundTint="@color/putih"
+            android:hint="Enter Your Email"
+            />
+    </TableLayout>
+
+    <Button
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/btNextRegister2"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/custom_arrow_next"
+        />
+
+</RelativeLayout>

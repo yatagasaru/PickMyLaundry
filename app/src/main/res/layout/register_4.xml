@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bluebg"
+    tools:context="com.example.lenovo.androidmysql.Register4"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/etReview"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/putih"
+            android:text="Let's review your information"
+            android:layout_marginBottom="8dp"
+            />
+        <TextView
+            android:id="@+id/etChange"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/putih"
+            android:text="You can change it if you want"
+            android:layout_marginBottom="16dp"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/wrapper1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintAnimationEnabled="false"
+            android:theme="@style/PutihTextInputLayout">
+
+            <EditText
+                android:id="@+id/fullname"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/putih"
+                android:hint="Full Name"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/wrapper2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintAnimationEnabled="false"
+            android:theme="@style/PutihTextInputLayout">
+
+            <EditText
+                android:id="@+id/phonenumber"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/putih"
+                android:hint="Phone Number"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/wrapper3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintAnimationEnabled="false"
+            android:theme="@style/PutihTextInputLayout">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/putih"
+                android:hint="Email"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/wrapper4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintAnimationEnabled="false"
+            android:theme="@style/PutihTextInputLayout">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/putih"
+                android:hint="Username"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/wrapper5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintAnimationEnabled="false"
+            android:theme="@style/PutihTextInputLayout">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/putih"
+                android:hint="Password"/>
+        </android.support.design.widget.TextInputLayout>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btNextRegister4"
+        android:text="D O N E !"
+        android:layout_marginBottom="32dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/hijautosca"
+        android:background="@drawable/custom_button_bg"
+        style="?android:attr/borderlessButtonStyle"
+        />
+</RelativeLayout>

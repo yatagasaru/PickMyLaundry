@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">AndroidMySQL</string>
     <string name="hakcipta">Copyrights 2018 © By Ebola.inc All Right Reserved</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

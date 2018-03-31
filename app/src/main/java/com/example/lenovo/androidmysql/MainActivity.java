@@ -1,6 +1,8 @@
 package com.example.lenovo.androidmysql;
 
 import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -94,7 +96,9 @@ public class MainActivity extends AppCompatActivity {
         bt_signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),MainUIActivity.class));
+                //startActivity(new Intent(getApplicationContext(),RegisterActivity.class));
+                startActivity(new Intent(getApplicationContext(),MainRegisterActivity.class));
+
             }
         });
     }
